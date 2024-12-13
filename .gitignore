@@ -31,4 +31,4 @@ build/
 
 #Custom folder
 extracts/*
-!extracts/
+!extracts/.gitkeep

@@ -1,0 +1,37 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment folder
+venv/
+*.venv
+
+# Excel files
+*.xlsx
+
+# Logs
+*.log
+
+# IDE settings
+.idea/
+.vscode/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# MacOS system files
+.DS_Store
+
+#Custom folder
+extracts/*
+!extracts/

@@ -1,0 +1,12 @@
+#locators
+PAGINATION = "//form[contains(@class,'pagination')]/div[2]/text()"
+SEARCH_RESULT_ROWS = "//*[contains(@class, 'row box')]"
+LINK_NAME = ".//h2//span/text()"
+IMG_VERIFIED = ".//h2//div/img"
+LABEL_LOCATION = ".//span[contains(text(),'Location')]//following-sibling::span/text()"
+LABEL_CITY = ".//span[contains(text(),'City')]//following-sibling::span/text()"
+LABEL_POBOX = ".//span[contains(text(),'P.O Box')]//following-sibling::span/text()"
+LABEL_PHONE = ".//a[contains(@id,'lblPhone-')]/text()"
+LABEL_MOBILE_1 = ".//a[contains(@id,'lblMobile-')]/text()"
+LABEL_MOBILE_2 = ".//a[contains(@id,'lblMobile2-')]/text()"
+BUTTON_WEBSITE = ".//button[contains(text(),'Website')]/text()"

@@ -4,11 +4,12 @@ import utils
 
 data = []
 search_text = os.getenv("search_text")
-
+counter = 0
 for i in range(1, utils.get_total_pages(search_text) + 1):
     tree = utils.get_parsed_response(search_text, i)
     boxes = tree.xpath(constants.SEARCH_RESULT_ROWS)
     for box in boxes:
+        counter += 1
         name = box.xpath(constants.LINK_NAME)[0]
         verified = "YES" if box.xpath(constants.IMG_VERIFIED) else 'NO'
         location = location_text[0] if (location_text := box.xpath(constants.LABEL_LOCATION)) else 'NA'
@@ -20,6 +21,7 @@ for i in range(1, utils.get_total_pages(search_text) + 1):
         website = website_text[0] if (website_text := box.xpath(constants.BUTTON_WEBSITE)) else 'NA'
 
         data.append({
+            'Sl.No.': counter,
             'Name': name,
             'Verified': verified,
             'Location': location,
